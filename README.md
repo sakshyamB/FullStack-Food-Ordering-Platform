@@ -1,1 +1,0 @@
-# FullStack-Food-Ordering-Platform
