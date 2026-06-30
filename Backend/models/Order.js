@@ -31,7 +31,6 @@ const orderSchema = new mongoose.Schema({
   subtotal: {
     type: Number,
     required: true,
-    default: 0
   },
   deliveryCharge: {
     type: Number,
@@ -41,7 +40,6 @@ const orderSchema = new mongoose.Schema({
   grandTotal: {
     type: Number,
     required: true,
-    default: 0
   },
   deliveryAddress: {
     type: String,
@@ -54,7 +52,7 @@ const orderSchema = new mongoose.Schema({
   },
   paymentMethod: {
     type: String,
-    enum: ['Cash on Delivery', 'Card', 'Mobile Banking', 'Mobile Wallet'],
+    enum: ['Cash on Delivery', 'Card', 'Mobile Banking', 'E-sewa', 'Khalti'],
     required: true
   },
   createdAt: {
